@@ -1,25 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <link rel="manifest" href="/magic.webmanifest">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-    <meta name="theme-color" content="white" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Magic 8 Ball">
-    <meta name="msapplication-TileImage" content="/img/ms144.png">
-    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <!-- JQuery / Materialize CSS + JavaScript imports -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <style>
+      
+         
+        h2{
+            font-family: 'League Gothic', sans-serif;
+        }
+        #portrait{
+width:22%;
+margin-right:10%;
+
+        }
+
+        #tcps{
+width:22%;
+margin-right:10%;
+
+        }
+
+        #laur{
+width:22%;
+margin-right:10%;
+
+        }
+        #hum{
+width:15%;
+margin-right:10%;
+
+        }
+
+        #container {
+            padding-left: 300px;
+        }
+
+        
+
+        #content {
+            padding: 20px;
+        }
+
+        @media only screen and (max-width : 992px) {
+            #container {
+                padding-left: 0px;
+            }
+        }
+    </style>
 
 </head>
 
-<body>
-    <form id="magic8ball">
-        <h1>Magic 8 ball</h1>
-        <h2>the 8 ball knows</h2>
-        <p>Ask me anything I will answer.</p>
-        <input id="question" placeholder="enter a question" />
-        <button type="submit">Ask</button>
-        <p id="answer">If you had asked The answer would be here</p>
-    </form>
-    <script src="js/main.js" type="module"></script>
+<body style="overflow-x:hidden; background-color:#F4F4F4;">
+    <div id="container">
+
+        <div id="menu">
+
+            <ul id="slide-out" class="side-nav fixed show-on-large-only">
+                <li><a href="#About">About</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li class="no-padding">
+
+        </div>
+        </li>
+        </ul>
+        </li>
+        </ul>
+    </div>
+
+
+    <div id="content" style="margin-left:13%;">
+        <a href="#" data-activates="slide-out" class="button-collapse hide-on-large-only"><i
+                class="material-icons">menu</i></a>
+
+        <section id="About" style="background-color: white; margin-left:160px; height:400px; border-radius: 10px; box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+          
+            <img  id="portrait" src="me.jpg" style="  margin-left:90px; margin-top:100px; float:left; border-radius:20%; display: block;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                          
+            
+                  <div class="container" >
+         
+                           
+                                    <h2 class="abouttitle"  style="padding-top:85px; "> <i class="glyphicon glyphicon-user"></i> About Me</h2>
+                            
+                                   
+                             <p id="1" style="text-align:left;  font-size:9.5pt; line-height: 19pt; ">
+                          
+                  Hey there! I'm Shannon a UI / UX Designer based in Paris, ON. I'm currently enrolled in Wilfrid Laurier’s User Experience Design (BDes) program. I have also graduated from Humber College’s Multimedia Design and Development program with Honours.
+                                </p>
+</div>
+                            </section>
+                        
+        <br><br><br><br><br><br><br>
+        
+     
+        <br>
+
+        <br><br>   <hr><br><br><br><br>
+
+                      
+        <section id="Education"   style="margin-left:160px; height:400px; ">
+<h2 style="margin-left:2%; padding-top:5%;" >Education</h2>
+<div id="e1" style="width: 350px; float:left;  height:150px;  margin:10px; background-color:white;   border-radius: 10px; box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+<h4 style="font-size:20px; margin-left:20px; margin-top:25px;">User Experience Design </h4>
+                  
+                    <h5 style="font-size:15px;  margin-left:20px;" >Wilfrid Laurier University, Brantford</h5>
+                    <h6 style="font-size:15px;  margin-left:20px;">Degree (2023)</h6>
+                    <img  id="laur" src="Laurier.png" style="   display: block; margin-left:250px; margin-top:10px;">
+                </div>
+                   
+                 <div id="e2" style="width: 350px; float:right; margin-right:5%; margin-top:1%; height:150px;  background-color:white;    border-radius: 10px; box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                    <h4 style="font-size:20px;  margin-left:20px; margin-top:20px;"> Multimedia Design & Development </h4>
+                  
+                    <h5 style="font-size:15px;  margin-left: 20px;">Humber College, Toronto</h5>
+                    <h6 style="font-size:15px;  margin-left:20px;">Diploma (2018)</h6>
+                    <img  id="hum" src="humber.jpg" style="   display: block; margin-left:280px; margin-top:-10px; ">
+                  
+                   <br>
+              <br>
+                </div>
+             
+            
+        </section>
+
+        <section id="Education2"   style="margin-left:160px;  ">
+         
+            <div id="e1" style="width: 350px; float:left;  height:150px;  margin:10px; background-color:white;   border-radius: 10px; box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <h4 style="font-size:20px; margin-left:20px; margin-top:25px;"> Making accessible media</h4>
+                              
+                                <h5 style="font-size:15px;  margin-left:20px;" >Humber College, Toronto </h5>
+                                <h6 style="font-size:15px;  margin-left:20px;">Certificate (2018)</h6>
+                                <img  id="hum" src="humber.jpg" style="   display: block; margin-left:280px; margin-top:-15px; ">
+                            </div>
+                               
+                             <div id="e2" style="width: 350px; float:right; margin-right:5%; margin-top:1%; height:150px;  background-color:white;    border-radius: 10px; box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                                <h4 style="font-size:20px;  margin-left:20px; margin-top:20px;"> Ethical conduct for <br>research involving humans</h4>
+                              
+                                <h5 style="font-size:15px;  margin-left: 20px;">TCPS 2 Core</h5>
+                                <h6 style="font-size:15px;  margin-left:20px;">Certificate (2020)</h6>
+                                <img  id="tcps" src="tc.png" style="   display: block; margin-left:250px; margin-top:-15px;">
+                            </div>
+                               <br>
+                          <br>
+                            </div>
+                         
+                        
+                    </section>
+<br>
+<br><br><br><br><br><br><br><br><br><br>
+
+<br> <hr><br><br><br><br><br><br><br><br><br>
+        <section id="Experience" style="margin-left:360px;" >
+           <h2  >Experience</h2>
+          
+     
+            <br>
+            <div id="ex1" style="width: 460px;  height:150px;  margin:10px; background-color:white;   border-radius: 10px; box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+   
+            <h4 style="font-size:20px; margin-left:30px; padding-top:40px;" >Assistant / Junior Graphic Designer (2015)</h4>
+                  
+                    <h5 style="font-size:15px; margin-left:30px; " >The Right Solution</h5>
+                   
+                   
+         
+        </div>
+        <br>
+        <div id="ex2" style="width: 460px;  height:150px;  margin:10px; background-color:white;   border-radius: 10px; box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <h4 style="font-size:20px;margin-left:30px; padding-top:40px; " >Junior Graphic Designer (2018)</h4>
+                  
+                    <h5 style="font-size:15px; margin-left:30px; ">Absolute Data Destruction</h5>
+                    
+           
+      </div>
+      <br>
+      <div id="ex3" style="width: 460px;  height:150px;  margin:10px; background-color:white;   border-radius: 10px; box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <h4 style="font-size:20px; margin-left:30px; padding-top:40px;">Video Editor (2018 - 2019)</h4>
+                  
+                    <h5 style="font-size:15px; margin-left:30px;">Fujifilm Canada</h5>
+                    
+           
+          </div>
+          <br>
+          <div id="ex4" style="width: 460px;  height:150px;  margin:10px; background-color:white;   border-radius: 10px; box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <h4 style="font-size:20px; margin-left:30px; padding-top:40px;">Podcast Editor (2020 - current)</h4>
+                  
+                    <h5 style="font-size:15px; margin-left:30px; ">Decode Podcast</h5>
+        </div>
+        </section>
+        <br><br><br><br><br><br> <hr> <br><br><br><br><br><br>
+        <section id="Skills">
+            <section id="Skills" style="margin-left:340px; background-color: white;  height:300px; width:800px; border-radius: 10px; box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+
+                <h2 style="margin-left:40px; padding-top:40px;">Skills</h2>
+        
+              <p style="margin-left:40px;" >I am skilled in UI/UX, Web Development, Adobe Creative Suite, Motion Graphics, Video Editing, <br>
+                Graphic Design and other multimedia practices.</p>
+                <br>
+                <p style="margin-left:40px;" >I am also trained in Javascript, PHP, HTML5 and CSS</p>
+        
+            </section>
+            <br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+    </div>
+    <script>
+        $('.button-collapse').sideNav({
+            menuWidth: 300, // Default is 300
+            edge: 'left', // Choose the horizontal origin
+            closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+            draggable: true // Choose whether you can drag to open on touch screens
+        });
+
+
+    </script>
 </body>
+
+</html>
