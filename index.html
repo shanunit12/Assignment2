@@ -233,7 +233,14 @@ margin-right:10%;
             draggable: true // Choose whether you can drag to open on touch screens
         });
 
-
+        window.onload = () => {
+    'use strict';
+  
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+               .register('.sw.js');
+    }
+  }
     </script>
 </body>
 
